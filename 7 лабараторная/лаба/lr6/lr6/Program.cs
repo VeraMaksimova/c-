@@ -12,6 +12,7 @@ namespace lr6
     {
         static void Main(string[] args)
         {
+                    
             try
             {
                 int[] SOMENAME = new int[5];
