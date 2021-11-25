@@ -31,6 +31,7 @@ namespace laba8
             public void add(T index);// Добавить 
             public void del(T index);// Удалить
             public void show(T index);//показать
+            public void iskl(T index);
         }
 
         class Owner
@@ -152,6 +153,24 @@ namespace laba8
                 for (int i = index, j = i + 1; i < size - 1; i++, j = i + 1)
                     this[i] = this[j];
                 size--;
+            }
+
+            public void iskl(int index)
+            {
+                try
+                {
+                    int x = 5;
+                    int y = x / 0;
+                    Console.WriteLine($"Результат: {y}");
+                }
+                catch
+                {
+                    Console.WriteLine("Возникло исключение!");
+                }
+                finally
+                {
+                    Console.WriteLine("Блок finally");
+                }
             }
             public void add(int index)
             {
