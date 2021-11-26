@@ -7,11 +7,19 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             // 1-ое задание 
-            //Вывести строку получить из строки первое слово
+            //Вывести строку получить из строки пер
 
-            string str = "привет как дела";
-            str = str.Substring(0, str.IndexOf('к'));
-            Console.WriteLine(str);
+            
+            string phrase = "привет как дела";
+            string[] words = phrase.Split(' ');
+
+            foreach (var word in words)
+            {
+                System.Console.WriteLine($"{word}");
+                break;
+            }
+
+            
             char[,,] myArr = new char[2, 2, 2] { { {'1','2' }, { '3', '4'} }, { { '5', '6' }, { '7', '8' } } };
             //полследовательность цифрами
 
